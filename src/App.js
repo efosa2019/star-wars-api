@@ -1,4 +1,3 @@
-
 import './App.css';
 import People from './components/People';
 

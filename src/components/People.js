@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import {Grid, Card} from 'semantic-ui-react';
-import Details from './Details'
+import Details from './Details';
 
 class SearchBar extends Component {
     constructor(props){
