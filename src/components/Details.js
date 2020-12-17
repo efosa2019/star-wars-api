@@ -8,15 +8,15 @@ class Details extends Component {
       expanded: false,  
     }
 
-    this.open = this.open.bind(this); 
-    this.close = this.close.bind(this); 
+    this.openInfo = this.openInfo.bind(this); 
+    this.closeInfo = this.closeInfo.bind(this); 
   }
 
-  open(){
+  openInfo(){
     this.setState({ expanded: !this.state.expanded })
   }
 
-  close(){
+  closeInfo(){
     this.setState({ expanded: !this.state.expanded })
   }
 
@@ -24,13 +24,13 @@ class Details extends Component {
     const info = this.props.details; 
 
     if(!this.state.expanded){
-      return <p className="ui primary button" onClick={this.open}>Show info</p>
+      return <p className="ui primary button" onClick={this.openInfo}>Show Info</p>
     }
 
     return(
       <div>
           <Container>
-        <p className= "ui secondary button" onClick={this.close}>Hide info</p>
+        <p className= "ui secondary button" onClick={this.closeInfo}>Hide Info</p>
             <h4>Gender: {info.gender}</h4>
             <p>BirthYear:{info.birth_year}</p>
             <p>HairColor:{info.hair_color}</p>
