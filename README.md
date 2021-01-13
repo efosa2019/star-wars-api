@@ -1,4 +1,4 @@
-There are three features available
+There are three features available in this project.
 
 List all the Star Wars characters by first and last name. Use swapi (Star Wars API) for this. The following GET request will retrieve a list of characters and their related information https://swapi.dev.api/people.
 
