@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Card} from 'semantic-ui-react';
+import {Grid, Card, Form} from 'semantic-ui-react';
 import Details from './Details';
 
 class SearchBar extends Component {
@@ -47,13 +47,15 @@ class SearchBar extends Component {
       }
       return (
         <div>
-        <form>
+        <Form>
+          <Form.Field>
           <input
             type="text"
             className="search-box"
             placeholder="Search for..."
             onChange={this.onChange}
           />
+          </Form.Field>
           <Grid columns={4}>
           {people.map(person => (
             <ul key={person.name}>
@@ -68,7 +70,7 @@ class SearchBar extends Component {
             </ul>
           ))}
           </Grid>
-        </form>
+        </Form>
         </div>
       );
     }
